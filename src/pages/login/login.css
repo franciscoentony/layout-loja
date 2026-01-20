@@ -1,0 +1,114 @@
+body {
+    margin: 0;
+    font-family: "Poppins", sans-serif;
+    background-color: #f7f7f7;
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  .container-login {
+    display: flex;
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    padding: 2rem 3rem;
+    max-width: 900px;
+    width: 90%;
+    gap: 3rem;
+  }
+  
+  .bloco-login, .bloco-criar {
+    flex: 1;
+  }
+  
+  h2 {
+    font-size: 1.3rem;
+    margin-bottom: 1.2rem;
+    color: #222;
+  }
+  
+  .formulario-login, .formulario-criar {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+  
+  .entrada {
+    padding: 0.8rem;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 1rem;
+    width: 100%;
+  }
+  
+  .campo-senha {
+    position: relative;
+  }
+  
+  .botao-olho {
+    position: absolute;
+    right: 10px;
+    top: 7px;
+    border: none;
+    background: none;
+    font-size: 1rem;
+    cursor: pointer;
+  }
+  
+  .link {
+    color: #5a2d82;
+    font-size: 0.9rem;
+    text-decoration: none;
+    margin-top: -0.5rem;
+  }
+  
+  .botao {
+    text-align: center;
+    display: block;
+    padding: 0.9rem;
+    border-radius: 6px;
+    font-weight: 600;
+    font-size: 1rem;
+    text-decoration: none;
+  }
+  
+  .roxo {
+    background-color: #5a2d82;
+    color: #fff;
+  }
+  
+  .roxo:hover {
+    background-color: #6b38a1;
+  }
+  
+  .branco {
+    border: 2px solid #5a2d82;
+    color: #5a2d82;
+    background: transparent;
+  }
+  
+  .branco:hover {
+    background: #f3ebfa;
+  }
+  
+  .divisor {
+    width: 2px;
+    background-color: #ddd;
+    height: 100%;
+  }
+  
+  @media (max-width: 768px) {
+    .container-login {
+      flex-direction: column;
+      gap: 2rem;
+      padding: 2rem;
+    }
+  
+    .divisor {
+      display: none;
+    }
+  }
+  

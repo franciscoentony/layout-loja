@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Site Esportivo</title>
+  <meta name='viewport' content='width=device-width, initial-scale=1'>
+  <link rel='stylesheet' type='text/css' media='screen' href='../../../Sigma.css'>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <script src='../../../main.js'></script>
+  <script src="/src/components/Header/header.js" defer></script>
+</head>
+
+<body>
+  <header class="navbar"></header>
+  <main id="home-root">
+    <section class="hero">
+      <h1>{Hello World!}</h1>
+      <p>Itens Esportivos: Sua melhor Loja</p>
+      <div class="hero-buttons">
+        <button class="btn-outline">
+          <a href="">
+            Catálogo
+          </a>
+        </button>
+        <button class="btn-dark">
+          <a href="../../pages/register.html">
+            Cadastar
+          </a>
+        </button>
+      </div>
+    </section>
+
+    <section class="image-section">
+      <div class="image-box"> <img src="/img1.jpg" alt="tenis" width="300"></div>
+      <div class="image-box"><img src="/img2.jpg" alt="tenis" width="300"></div>
+    </section>
+
+    <section class="features">
+      <h2>Destaques</h2>
+      <p class="subheading">Especificações:</p>
+      <div class="features-grid">
+        <div class="feature">
+          <div class="icon"></div>
+          <h3>Shorts Nike Dri-FIT Academy 23</h3>
+          <p>Body text for whatever you'd like to say. Add main takeaway points, quotes, anecdotes, or even a very very
+            short story.</p>
+        </div>
+        <div class="feature">
+          <div class="icon"></div>
+          <h3>Shorts Adidas Aeroready Essentials</h3>
+          <p>Confortável e versátil, perfeito para o dia a dia ou academia.</p>
+        </div>
+        <div class="feature">
+          <div class="icon"></div>
+          <h3>Tênis Nike Revolution 6</h3>
+          <p>Ideal para corrida leve e caminhadas, com ótimo amortecimento.</p>
+        </div>
+        <div class="feature">
+          <div class="icon"></div>
+          <h3>Tênis Nike Run Falcon 3.0</h3>
+          <p>Modelo versátil para quem busca conforto e estilo esportivo.</p>
+        </div>
+        <div class="feature">
+          <div class="icon"></div>
+          <h3>Camisa Nike Dri-FIT Park VII</h3>
+          <p>Modelo clássico e leve, ideal para treinos e jogos.</p>
+        </div>
+        <div class="feature">
+          <div class="icon"></div>
+          <h3>Camisa Puma Train Cloudspun</h3>
+          <p>Tecido macio com toque premium e alta respirabilidade.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <main id="products-root" class="hidden">
+    <div class="products-top container">
+      <h1>Produtos</h1>
+    </div>
+
+    <div class="container layout">
+      <aside class="sidebar" aria-label="Filtros">
+        <div class="filter-title">Categorias</div>
+        <ul class="filter-list" id="filterList">
+          <li><button data-cat="all" class="active">Todos</button></li>
+          <li><button data-cat="Tênis">Tênis</button></li>
+          <li><button data-cat="Shorts">Shorts</button></li>
+          <li><button data-cat="Camisas">Camisas</button></li>
+        </ul>
+
+        <hr class="sep">
+
+        <div class="filter-title">Preço</div>
+        <div class="price-inputs">
+          <input type="number" id="minPrice" placeholder="R$ min">
+          <input type="number" id="maxPrice" placeholder="R$ max">
+        </div>
+        <button id="priceFilterBtn" class="btn-apply">Aplicar</button>
+        <button id="clearPrice" class="btn-clear">Limpar</button>
+      </aside>
+
+      <section class="products-panel" id="produtos-section">
+        <div class="products-header">
+          <h2>Resultados</h2>
+          <div class="count muted" id="productCount">0 itens</div>
+        </div>
+
+        <div class="grid" id="productsGrid">
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-logo"></div>
+    <div class="footer-columns">
+      <i class="fa-brands fa-x-twitter"></i>
+      <i class="fa-brands fa-instagram"></i>
+      <i class="fa-brands fa-youtube"></i>
+      <i class="fa-brands fa-linkedin"></i>
+      <div class="column">
+        <h4>Use cases</h4>
+        <ul>
+          <li>UI design</li>
+          <li>UX design</li>
+          <li>Wireframing</li>
+          <li>Diagramming</li>
+          <li>Brainstorming</li>
+          <li>Online whiteboard</li>
+          <li>Team collaboration</li>
+        </ul>
+      </div>
+      <div class="column">
+        <h4>Explore</h4>
+        <ul>
+          <li>Design</li>
+          <li>Prototyping</li>
+          <li>Development features</li>
+          <li>Design systems</li>
+          <li>Collaboration features</li>
+          <li>Design process</li>
+          <li>FigmaJam</li>
+        </ul>
+      </div>
+      <div class="column">
+        <h4>Resources</h4>
+        <ul>
+          <li>Blog</li>
+          <li>Best practices</li>
+          <li>Colors</li>
+          <li>Color wheel</li>
+          <li>Support</li>
+          <li>Developers</li>
+          <li>Resource library</li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+
+</body>
+
+</html>
